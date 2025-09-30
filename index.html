@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NMZGHNK62H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMZGHNK62H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-NMZGHNK62H');
-</script>
+    gtag('config', 'G-NMZGHNK62H', {
+      'linker': {
+        'domains': ['example1.com', 'example2.com'] // 🔹 Replace with your domains
+      }
+    });
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bike Accessories</title>
@@ -141,7 +146,7 @@
 <body>
   <header>
     <h1>Bike Accessories</h1>
-     <a href="https://magical-nasturtium-ba8f76.netlify.app/">Home</a>
+    <a href="https://magical-nasturtium-ba8f76.netlify.app/">Home</a>
     
     <nav>
       <a href="#">Home</a>
